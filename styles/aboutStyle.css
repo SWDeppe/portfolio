@@ -1,0 +1,54 @@
+.aboutTitle {
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  font-size: 1.7em;
+  margin: 10px;
+  direction: ltr;
+}
+.aboutSection {
+  /*direction: rtl;*/
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  display: none;
+  margin-top: 10vh;
+  margin-left: 100px;
+  margin-right: 5vw;
+  padding: 3vh 2.5vw;
+  backdrop-filter: blur(2px) saturate(150%);
+  background: linear-gradient(
+    to left top,
+    #f8d03d3b,
+    RGBA(31, 55, 120, 0.3),
+    RGBA(82, 8, 32, 0.5),
+    RGBA(60, 36, 50, 0.3),
+    RGBA(41, 4, 16, 0.1)
+  );
+  font-size: 1.2rem;
+  border-radius: 20px;
+  width: calc(100vw - 400px);
+  max-height: 70vh;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  scrollbar-color: #e0e1dd transparent;
+}
+.aboutSection p {
+  direction: ltr;
+}
+
+@keyframes sectionsArriv {
+  to {
+    left: 0;
+  }
+}
+@keyframes sectionsGo {
+  to {
+    left: -100vw;
+  }
+}

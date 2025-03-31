@@ -1,0 +1,138 @@
+.center-image {
+  width: 100px;
+  border-radius: 50%;
+  animation-duration: 1s;
+  margin: 0;
+  backdrop-filter: blur(2px) saturate(150%);
+  cursor: pointer;
+}
+.centerAnnim {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation-duration: 2s;
+  margin: 0;
+  border: 1px solid rgb(249 239 218);
+  animation-name: center-image-animation;
+  animation-iteration-count: infinite;
+}
+@keyframes center-image-animation {
+  to {
+    scale: 150%;
+    opacity: 0;
+  }
+}
+.sectionOppener {
+  position: absolute;
+  top: calc(100vh - 300px);
+  left: calc(100vw - 200px);
+  transform: scale(1);
+  height: 300px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  flex-wrap: wrap;
+  animation-duration: 6s;
+}
+.sectionOppener > div > img {
+  height: 100px;
+}
+.sectionOppener p {
+  color: transparent;
+  animation-duration: 1s;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.sectionOppener p:hover {
+  cursor: pointer;
+}
+.top-line {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.center-line {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.bottom-line {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.top-image {
+  rotate: 89.5deg;
+  transform: translate(100px, 0);
+  z-index: -1;
+  opacity: 0;
+  transition: 1s;
+  animation-duration: 1s;
+}
+.bottom-image {
+  margin-left: -1px;
+  transform: translate(0, -100px);
+  z-index: -1;
+  opacity: 0;
+  animation-duration: 1s;
+}
+.lines {
+  height: 100px;
+}
+.path-img-1 {
+  margin-top: -39px;
+}
+.pathSection img {
+  animation-duration: 3s;
+  animation-name: baleyScreenPath;
+}
+@keyframes baleyScreenPath {
+  to {
+    left: 0px;
+  }
+}
+@keyframes baleyScreenPath2 {
+  to {
+    top: 10vh;
+  }
+}
+@keyframes textApear {
+  from {
+    color: transparent;
+  }
+  to {
+    color: white;
+  }
+}
+@keyframes hoverSections {
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes hoverSectionsOutTop {
+  to {
+    opacity: 0;
+    transform: translate(100px, 0);
+  }
+}
+@keyframes hoverSectionsOutBottom {
+  to {
+    opacity: 0;
+    transform: translate(0, -100px);
+  }
+}
+@keyframes centerImageAnim {
+  to {
+    rotate: 271deg;
+  }
+}
+@keyframes centerImageAnimOut {
+  to {
+    rotate: 0deg;
+  }
+}

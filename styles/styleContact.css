@@ -1,0 +1,127 @@
+.aboutTitle {
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1vh;
+}
+.contactSection {
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  display: none;
+  margin-top: 10vh;
+  margin-left: 100px;
+  margin-right: 5vw;
+  padding: 3vh 2.5vw;
+  backdrop-filter: blur(2px) saturate(150%);
+  background: linear-gradient(
+    to left top,
+    #f8d03d3b,
+    RGBA(31, 55, 120, 0.3),
+    RGBA(82, 8, 32, 0.5),
+    RGBA(60, 36, 50, 0.3),
+    RGBA(41, 4, 16, 0.1)
+  );
+  font-size: 1.2rem;
+  border-radius: 20px;
+  max-width: calc(100vw - 400px);
+  max-height: 70vh;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  scrollbar-color: #e0e1dd transparent;
+  overflow-y: auto;
+  scrollbar-color: #e0e1dd transparent;
+  max-height: 80vh;
+}
+.typeOfArts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80vw;
+}
+
+.contactTitle {
+  text-align: center;
+  font-style: none;
+  margin: 1vh;
+}
+
+.warningSoon {
+  font-weight: 700;
+}
+
+.contact {
+  position: absolute;
+  top: 600vh;
+  background-color: rgb(33, 33, 33);
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  z-index: -10;
+}
+.joinInfo {
+  padding-top: 10vh;
+  padding-left: 10vw;
+  font-size: 5vh;
+}
+.joinInfosText {
+  margin: 0;
+}
+.joinTitle {
+  margin-bottom: 0;
+}
+.contactJoinLogo1 {
+  border-radius: 15%;
+  width: 3vw;
+}
+.contactJoinLogo2 {
+  border-radius: 55%;
+  width: 3vw;
+}
+.contactJoinLinks {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  font-size: 2vw;
+  transition: 0.5s;
+}
+.contactJoinLinks:hover {
+  font-size: 2.2vw;
+  margin: 1vh;
+}
+.socialMedia {
+  display: flex;
+  position: absolute;
+  bottom: 10vh;
+  flex: row;
+  align-items: center;
+}
+.contactSocialLogo {
+  height: 5vw;
+  border-radius: 50%;
+  margin: 1vw;
+  transition: 0.5s;
+}
+.contactSocialLogo:hover {
+  filter: invert();
+}
+.socialTitle {
+  display: inline-block;
+  padding-left: 2vw;
+  margin-right: 1vw;
+  padding-bottom: 5px;
+  align-items: center;
+}
+footer {
+  position: absolute;
+  padding-left: 2vw;
+  bottom: 1vh;
+  font-size: 1.5vw;
+}
+.logoInContacts {
+  position: absolute;
+  top: 10vh;
+  right: 5vw;
+  height: 80vh;
+  z-index: -9;
+}

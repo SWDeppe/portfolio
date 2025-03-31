@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="photos/logo.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/aboutStyle.css" />
+    <link rel="stylesheet" href="styles/styleSectionOppener.css" />
+    <link rel="stylesheet" href="styles/portfolioStyle.css" />
+    <link rel="stylesheet" href="styles/styleContact.css" />
+    <title>Swannova</title>
+  </head>
+  <body>
+    <div class="toMoov" id="toMoov">
+      <header>
+        <div class="headerTexts">
+          <h1 class="headerTitle" id="headerTitle">Welcome!</h1>
+          <br />
+          <br />
+          <p class="headerAccroche" id="headerAccroche">
+            <strong>Let’s turn ideas into reality,</strong>
+
+            <span class="headerAccrocheTogether"> together.</span>
+          </p>
+        </div>
+        <img
+          id="header"
+          src="photos/DALL·E 2024-10-13 15.04.21 - A breathtaking, high-impact background image without text. The design features a stunning starry sky with vivid stars and cosmic elements, set against.webp"
+          alt=""
+          class="headerBackground"
+        />
+        <img src="photos/logo.png" alt="" class="headerLogo" />
+      </header>
+      
+      <div class="sectionOppener" id="sectionToHover">
+        <div class="top-line">
+          <img src="photos/corner-lines.png" class="top-image" id="top-image" />
+          <p class="top-text" id="paraTop" onclick=" ClickedSection(1, this)">
+            About
+          </p>
+        </div>
+        <div class="center-line">
+          <img src="photos/adjust.png" class="center-image" id="center-image" />
+          <p class="center-text" id="paraCenter" onclick=" ClickedSection(2, this)">
+            Portfolio
+          </p>
+        </div>
+        <div class="bottom-line">
+          <img
+            src="photos/corner-lines.png"
+            class="bottom-image"
+            id="bottom-image"
+          />
+          <p class="bottom-text" id="paraBottom" onclick="ClickedSection(3, this)">
+            Contact
+          </p>
+        </div>
+      </div>
+      <div class="pathSection" id="pathSection"></div>
+      <div class="centerAnnim" id="centerAnnim"></div>
+    </div>
+
+    <div class="about">
+      <div class="AboutContent" id="AboutContent">
+        <div class="aboutTextContainer">
+          <h1 class="aboutTitle">About</h1>
+          <p class="aboutMeText">
+            Hi, I'm Swann, a web developer passionate about creating interactive
+            websites and transitioning into full-stack and game development.<br /><br />
+            I’ve worked on various projects, like building a photographer's
+            site, combining creativity and user-focused design. I draw
+            inspiration from my love of travel and nature, bringing that
+            creativity into everything I build. My goal is to develop games and
+            full-stack solutions that balance innovation and simplicity.
+          </p>
+        </div>
+        <img
+          src="photos/Brunlees (65 de 97)-Photoroom.png"
+          alt=""
+          class="AboutPic"
+        />
+      </div>
+      <button
+        class="aboutButton"
+        id="aboutButton"
+        onclick="aboutOppenClose(this, false)"
+      >
+        &#8631;
+      </button>
+    </div>
+   
+    <section class="aboutSection" id="aboutSection">
+      <h1 class="aboutTitle">About Me</h1>
+      <p class="aboutText">
+        Welcome to my portfolio! I'm Swann, a web developer with a passion for
+        both creating interactive websites and exploring the vast world of
+        full-stack and game development. My journey started with HTML, CSS, and
+        JavaScript, but my goal is to dive deeper into back-end technologies
+        and, ultimately, game development. I’ve worked on various web projects,
+        including building a professional website for a photographer,
+        Washingtoon. This experience, combined with my background in customer
+        service, has helped me develop a keen sense of communication, user
+        experience, and teamwork. Outside of coding, I love to travel and draw
+        inspiration from nature. Whether it’s hiking in the wilderness or
+        exploring new cultures, I always bring a sense of creativity and
+        exploration into my work. I'm driven by the idea of developing games
+        that allow players to interact harmoniously with nature, just as I aim
+        to balance innovation with simplicity in my web projects. As I continue
+        to grow my skills in full-stack development and game design, I’m excited
+        to collaborate on projects that challenge me and push the boundaries of
+        creativity.
+      </p>
+       
+      
+      <div class="pathSection" id="pathSection"></div>
+    </div>
+    </section>
+    <section class="portfolioSection" id="portfolioSection">
+      
+      <button class="portBack" id="backBtn" onclick="backBtnClick()">back</button>
+      <h1 class="portTitle">Porfolio</h1>
+      <div class="typeOfArtsS">
+        <div
+          class="webSites artSection"
+          id="webSites"
+          onclick="oppenPortfolio(this, 1)"
+        >
+          <h3 class="websitesTitle artTitle">Pong</h3>
+          <img src="photos/pong.png" alt="" class="websitesImage artImg" />
+        </div>
+        <a class="brunleesWebSites artSection" href="https://brunlees.org/"> 
+      <h3 class="websitesTitle artTitle">Brunlees.org</h3> 
+      <img src="photos/2.png" alt="" class="websitesImage artImg" />
+    </a>
+        <div
+          class="games artSection"
+          id="games"
+          onclick="oppenPortfolio(this, 2)"
+        >
+          <h3 class="gamesTitle artTitle">arduino <br>auto radiator</h3>
+          <img src="photos/arduino-logo-1.png" alt="" class="gamesImage artImg" />
+        </div>
+        <div
+          class="games artSection"
+          id="games"
+          onclick="oppenPortfolio(this, 3)"
+        >
+          <h3 class="gamesTitle artTitle">arduino <br>qrScanner</h3>
+          <img src="photos/arduino-logo-1.png" alt="" class="gamesImage artImg" />
+        </div>
+        
+        
+      </div>
+    </section>
+    <section class="contactSection" id="contactSection">
+      <h1 class="contactTitle">Contact</h1>
+      <div class="contactContainer">
+        <a href="mailto:jamesbrunlees@gmail.com" class="contactJoinLinks"
+          ><img class="contactJoinLogo1" src="photos/emailBox.jpg" alt="" />
+          jamesbrunlees@gmail.com</a
+        ><br />
+        <a href="tel:+353 83 446 2393" class="contactJoinLinks"
+          ><img
+            class="contactJoinLogo2"
+            src="photos/phone-call-icon-old-telephone-icon-calling-phone-technology-device-contact-information-communication-symbol-support-chat-trendy-black-sign-isolated-on-white-.jpg"
+            alt=""
+          />
+          +353 83 446 2393</a
+        >
+        <br />
+        <a href="https://www.twitter.com/waslloco/"
+          ><img
+            class="contactSocialLogo"
+            src="photos/Icon-Logo-Twitter-logo-Twitter-logo-blue-social-Media-area.png"
+            alt=""
+        /></a>
+        <a
+          href="https://www.instagram.com/wbrunlees?igsh=YnBjdDdld3JqeW9l&utm_source=qr"
+          ><img
+            class="contactSocialLogo"
+            src="photos/instagram_icon_231990.webp"
+            alt=""
+        /></a>
+        <a href="https://www.youtube.com/@waslloco"
+          ><img class="contactSocialLogo" src="photos/images.png" alt=""
+        /></a>
+        <a href="https://www.tiktok.com/@waslloco"
+          ><img
+            class="contactSocialLogo"
+            src="photos/transparent-tiktok-logo-black-and-white-logo-tiktok-app-minima-minimalist-black-and-white-tiktok-app-1711004158896.jpg"
+            alt=""
+        /></a>
+      </div>
+    </section>
+    <script src="portfolioLogic.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

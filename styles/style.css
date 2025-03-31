@@ -1,0 +1,195 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  color: #e0e1dd;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.toMoov {
+  animation-duration: 3s;
+}
+@keyframes baleyScreen {
+  to {
+    margin-left: -100vw;
+  }
+}
+@keyframes baleyOppener {
+  50% {
+    margin-left: -100vw;
+  }
+  to {
+    margin-left: -100vw;
+  }
+}
+.headerBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+  width: calc(100vw - (100vw - 100%));
+  object-fit: cover;
+}
+.headerTexts {
+  letter-spacing: 0.1rem;
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  margin-top: 20vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 3vh 2vw;
+  backdrop-filter: blur(2px) saturate(150%);
+  width: fit-content;
+  background: linear-gradient(
+    to left top,
+    #f8d03d3b,
+    RGBA(31, 55, 120, 0.3),
+    RGBA(82, 8, 32, 0.5),
+    RGBA(60, 36, 50, 0.3),
+    RGBA(41, 4, 16, 0.1)
+  );
+  font-size: 1.5rem;
+  border-radius: 20px;
+}
+
+.headerTitle {
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1vh;
+}
+.headerAccroche {
+  display: inline-block;
+  margin: 0;
+}
+.headerAccrocheTogether {
+  display: inline-block;
+  color: rgb(29, 33, 33);
+  font-weight: 900;
+}
+.headerLogo {
+  margin: 10px;
+
+  height: 17vh;
+  border-radius: 100%;
+  backdrop-filter: blur(2px) saturate(150%);
+}
+.letters {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(31, 55, 100, 0.527);
+  align-items: center;
+}
+.navBar a {
+  padding: 2px 5px;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navBar a:hover {
+  cursor: pointer;
+}
+.navStyle {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  height: 2vw;
+  width: 2vw;
+  top: 10vh;
+  background-image: linear-gradient(
+    to top right,
+    transparent 50%,
+    rgba(31, 55, 100, 0.527) 0
+  );
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.cards {
+  background-color: black;
+}
+.portfolio {
+  width: 300vw;
+  height: 100px;
+  object-fit: cover;
+  background-repeat: repeat-x;
+  background-size: 100px;
+}
+
+.about {
+  position: fixed;
+  z-index: 1;
+  top: 10vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@keyframes showAboutNav {
+  50% {
+    margin-left: -12vw;
+  }
+  to {
+    margin-left: -25vw;
+  }
+}
+.aboutButton {
+  border-style: none;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  font-size: 2rem;
+  padding: 10px 2px 1px 2px;
+  align-items: center;
+  background-color: rgba(31, 55, 100, 0.2);
+  backdrop-filter: blur(2px);
+  color: white;
+}
+.AboutContent {
+  animation-duration: 3s;
+  animation-name: showAboutNav;
+  margin-left: -25vw;
+  direction: rtl;
+  width: 25vw;
+  height: 80vh;
+  backdrop-filter: blur(2px) invert(100%) opacity(80%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-style: solid;
+  border-left: none;
+  border-width: 3px;
+}
+.aboutTitle {
+  padding: 0px 10px;
+  direction: ltr;
+}
+.AboutPic {
+  height: 30vh;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.aboutTextContainer {
+  display: block;
+  padding-left: 0;
+  scrollbar-width: thin;
+  height: 80vh;
+  overflow-y: auto;
+}
+.aboutTextContainer p {
+  padding: 10px 10px;
+  font-weight: 800;
+  margin-top: 0;
+  padding-bottom: 30vh;
+  float: inline-end;
+  direction: ltr;
+}
+html {
+  scrollbar-color: #e0e1dd transparent;
+  scrollbar-width: thin;
+  scroll-margin: 0;
+}
